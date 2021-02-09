@@ -2,9 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Survey Form - FCC</title>
   </head>
   <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      This simple form aims at collecting basic information about a person.      
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Karl Andersson"><br><br>
+
+      <label id="email-label" for="email">email:</label><br>
+      <input type="email" id="email" name="email" placeholder="karl.andersson@gmail.com"><br><br>
+
+      <label id="number-label" for="number">Number:</label><br>
+      <input type="tel" id="number" name="number" placeholder="0704638998"
+      pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" min="0000000000" max="9999999999"><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <select id="dropdown" name="dropdown">
+      <option value="Man">Man</option>
+      <option value="Woman">Woman</option>
+      <option value="Neither Or">Neither Or</option>
+      <option value="Prefer to not answer">Prefer to not answer</option>
+    </select>
+    </form>
 
   </body>
 </html>
